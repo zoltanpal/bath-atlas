@@ -16,9 +16,7 @@ It turns scientific elevation datasets into navigable 3D surfaces, with controls
 - **Responsive interface** — a dark-themed viewer with collapsible controls on smaller screens.
 - **Loading feedback** — display progress feedback while larger datasets load.
 
-## Available datasets
-
-BathAtlas currently includes the following areas:
+## Example datasets
 
 | Area | Description |
 | --- | --- |
