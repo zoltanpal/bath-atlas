@@ -1,9 +1,7 @@
-
-import { Mail, ExternalLink } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 import { IconBrandLinkedin } from "@tabler/icons-react"
 
-const contactEmail = (import.meta.env.VITE_CONTACT_EMAIL ?? "").trim()
-const linkedInUrl = (import.meta.env.VITE_CONTACT_LINKEDIN_URL ?? "").trim()
+const linkedInUrl = "https://www.linkedin.com/in/zolt%C3%A1n-p%C3%A1l-49368184/"
 
 export default function Contact() {
   return (
@@ -43,28 +41,6 @@ export default function Contact() {
             >
               Connect on LinkedIn
               <ExternalLink className="size-4" aria-hidden="true" />
-            </a>
-          </section>
-        )}
-
-        {contactEmail && (
-          <section className="rounded-2xl border border-white/10 bg-[#07101a] p-6 sm:p-8">
-            <div className="flex items-center gap-3">
-              <Mail className="size-5 text-cyan-300" aria-hidden="true" />
-              <h2 className="text-lg font-semibold text-white">
-                Email
-              </h2>
-            </div>
-
-            <p className="mt-4 text-sm leading-7 text-slate-400 sm:text-base">
-              Prefer email? You can also contact me directly.
-            </p>
-
-            <a
-              href={`mailto:${contactEmail}`}
-              className="mt-5 inline-flex rounded-lg border border-cyan-400/30 bg-cyan-400/10 px-4 py-2.5 text-sm font-medium text-cyan-200 transition-colors hover:bg-cyan-400/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
-            >
-              {contactEmail}
             </a>
           </section>
         )}
